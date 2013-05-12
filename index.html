@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blah</title>
+	<style type="text/css">
+	html p {
+		color:red;
+	}
+
+    li p {
+		color:blue;
+	}
+
+	div p {
+		color:yellow;
+	}
+	div > p {
+		color:green;
+	}
+	</style>
+</head>
+<body>
+	<p>This is a paragraph</p>
+	<div><p>This is a paragraph in a div</p></div>
+	<ul>
+		<li><p>This is in a list</p></li>
+		<li><div><p>This is a paragraph in a div in the list</p></div><p>Text after div</p></li>
+	</ul>
+</body>
+</html>
