@@ -1,0 +1,25 @@
+%w to create an array of strings,
+
+All variables are pointers. Person1 = Person2 will change if Person2 does. Use .dup instead to copy it.
+
+Hashes are just associative arrays (PHP) or dictionaries (Python).
+Arrays can be indexed in reverse by using a negative key. E.g. Array[-1] to get the last element of Array[]
+
+Also can index an array using a[start, count] or ranges a[1...3] or a[1..3]. .. is range inclusive, ... is range exclusive. See fig 4.1
+
+A FIFO array can be created by using shift and push.
+
+Use the test library to test your shitsssssss
+
+Remember inject(), collect, each_with_index iterators. Inject is super powerful, can also pass methods like + to it.
+
+Only use 'loop' loops with external iterators because they terminate cleanly.
+
+Enumerators can be created explicitly.!! Remember this.. Page 82
+
+Note of caution for enumerators like select and count for infinite sequences. They tend to iterate through the whole array before returning a result.
+To have an enumerator for infinite sequences, you would likely need to make it yourself. Come back to page 84 to understand these after reading through the book.
+
+Study clojures p 87.
+
+Lambdas are great, use instead of procs, can be used to simulate if and while statements.

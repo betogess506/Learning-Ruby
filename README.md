@@ -1,0 +1,1 @@
+See study-notes.txt for my current notes. I'm still learning, git, ruby, and a few other languages. I hope to update my github soon :) Stay tuned.
