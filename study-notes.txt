@@ -23,3 +23,5 @@ To have an enumerator for infinite sequences, you would likely need to make it y
 Study clojures p 87.
 
 Lambdas are great, use instead of procs, can be used to simulate if and while statements.
+
+Gserver example. Check out mixing in Comparable (need to define <=>) or Enumerable (need to define each)
