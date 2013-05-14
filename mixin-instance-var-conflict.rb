@@ -23,12 +23,16 @@ class Telescope
   #....
 end
 
+class AnotherTelescope < Telescope
+end
+
 
 test = Telescope.new
 test.add_viewer("test viewer")
 puts test.observers_list
 test.add_observer("Test observer");
 puts test.observers_list
+puts AnotherTelescope.new.observers_list #prints nothing, which is expected.
 
 =begin
 Must note to myself to be careful of what just happened above. Good practice to name methods in modules after the module themselves.
