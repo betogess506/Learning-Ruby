@@ -25,3 +25,9 @@ Study clojures p 87.
 Lambdas are great, use instead of procs, can be used to simulate if and while statements.
 
 Gserver example. Check out mixing in Comparable (need to define <=>) or Enumerable (need to define each)
+
+Really need to understand classes more. I get inheritance, mixins however are a little weird. Going to practice with class_test.rb.
+
+Also need to look into symbols as parameters.
+
+Try to move away from inheritance, and more towards mixins. Avoid is a relationsips, rather, focus on uses a.
