@@ -1,4 +1,4 @@
-%w to create an array of strings,
+w to create an array of strings,
 
 All variables are pointers. Person1 = Person2 will change if Person2 does. Use .dup instead to copy it.
 
@@ -44,9 +44,10 @@ sub only matches/replaces the first match it comes across, to replace all matche
 
 The following are equivilant:
 /mm\/dd/ # => /mm\/dd/
-Regexp.new("mm/dd") # => /mm\/dd/
+regexp.new("mm/dd") # => /mm\/dd/
 %r{mm/dd} # => /mm\/dd/
 
 all characters match themselves except ., |, (, ), [, ], {,
 }, +, \, ^, $, *, and ?
 
+When using splats, to pass all arguements to the superclass, you don't need to name the splat arguement if you just pass super without any arguements.
