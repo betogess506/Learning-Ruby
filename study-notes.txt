@@ -31,3 +31,5 @@ Really need to understand classes more. I get inheritance, mixins however are a 
 Also need to look into symbols as parameters.
 
 Try to move away from inheritance, and more towards mixins. Avoid is a relationsips, rather, focus on uses a.
+
+Ranges dont take as much memory as most think. a = (1..1_000_000) only contains references to two FixNum numbers, but converting to an array consumes the entire range of memory in FixNum numbers.
