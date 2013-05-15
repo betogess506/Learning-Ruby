@@ -33,3 +33,5 @@ Also need to look into symbols as parameters.
 Try to move away from inheritance, and more towards mixins. Avoid is a relationsips, rather, focus on uses a.
 
 Ranges dont take as much memory as most think. a = (1..1_000_000) only contains references to two FixNum numbers, but converting to an array consumes the entire range of memory in FixNum numbers.
+
+In ruby, if you want objects to produce ranges, they must respond to the succ method, returning the next object in the sequence. Objects must also be comparable with <=>
