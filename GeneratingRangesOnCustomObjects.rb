@@ -22,3 +22,4 @@ p1 = PowerOfTwo.new(4)
 p2 = PowerOfTwo.new(32)
 
 puts (p1..p2).to_a
+system "pause"

@@ -36,4 +36,14 @@ Ranges dont take as much memory as most think. a = (1..1_000_000) only contains 
 
 In ruby, if you want objects to produce ranges, they must respond to the succ method, returning the next object in the sequence. Objects must also be comparable with <=>
 
-Ranges are very useful for interval testing which is most commonly used with case statements. e.g. (1..5) === 3 #=> true
+Ranges are very useful for interval testing which is most commonly used with case statements. e.g. (1..5) === 3 #=> true	
+
+REGULAR EXPRESIONS~~~~
+
+sub only matches/replaces the first match it comes across, to replace all matches use gsub.
+
+The following are equivilant:
+/mm\/dd/ # => /mm\/dd/
+Regexp.new("mm/dd") # => /mm\/dd/
+%r{mm/dd} # => /mm\/dd/
+
