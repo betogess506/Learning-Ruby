@@ -47,3 +47,6 @@ The following are equivilant:
 Regexp.new("mm/dd") # => /mm\/dd/
 %r{mm/dd} # => /mm\/dd/
 
+all characters match themselves except ., |, (, ), [, ], {,
+}, +, \, ^, $, *, and ?
+
