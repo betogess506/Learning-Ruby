@@ -9,6 +9,10 @@ class ScoreKeeper
     @count += 1
     self
   end
+  def average
+    fail "No Scores" if @count == 0
+    Float(@total_score) / @count
+  end
 end
 
 sk = ScoreKeeper.new
@@ -17,4 +21,4 @@ sk << 12
 sk << 32
 puts sk.total_score
 puts sk.count
-puts sk << 49
+puts (sk << 49).average

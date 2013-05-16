@@ -8,5 +8,5 @@ if operator =~ /^t/
 else
   calc = lambda {|x| x+number}
 end
-p operator =~ /^t/
+p operator =~ /^t/ 
 puts (1..10).collect(&calc).join(", ")
