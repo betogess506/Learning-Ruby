@@ -5,3 +5,10 @@ Snake
 FindAnything
 WinTools?
 Process Monitor?
+
+==
+
+Libraries to learn:
+
+OptionParser
+LibXML/Nokogiri.
