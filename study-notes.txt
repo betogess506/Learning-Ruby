@@ -51,3 +51,5 @@ all characters match themselves except ., |, (, ), [, ], {,
 }, +, \, ^, $, *, and ?
 
 When using splats, to pass all arguements to the superclass, you don't need to name the splat arguement if you just pass super without any arguements.
+
+Fibers are really good for throttling and iterating over infinite sequences.
