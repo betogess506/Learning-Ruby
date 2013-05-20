@@ -1,0 +1,5 @@
+I want to focus and become fluent with Ruby, then move to ruby on rails, along with web applications with css, html, and javascript.
+
+Then I want to get into Javascript and Java for mobile development. Eventually branching to Objective C for IOS (hopefully I can find a wrapper so I dont need to learn Objective C specifically.) Then I want to do one of two things: Go into PHP if rails turns out not to be my thing OR Node.JS (though I don't know much about it) and go back to my roots and get one of the lower level languages like C# or C++ down. It's pretty ambitious and will likely take years. 
+
+These priorities may change as I become more experienced.
