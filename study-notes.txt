@@ -55,3 +55,5 @@ When using splats, to pass all arguements to the superclass, you don't need to n
 Fibers are really good for throttling and iterating over infinite sequences. Thread errors are very difficult to track down, review p187.
 
 Mutex is amazing for thread scheduling. Using mutex.synchronize preferably over lock and unlock.
+
+Need to explore why things like Threads.each(&:join) work the way they do. Also need to delve into the IO class a bit more, and experiment with subprocesses and forks.
