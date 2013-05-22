@@ -59,3 +59,7 @@ Mutex is amazing for thread scheduling. Using mutex.synchronize preferably over 
 Need to explore why things like Threads.each(&:join) work the way they do. Also need to delve into the IO class a bit more, and experiment with subprocesses and forks.
 
 Check out NUnit and JUnit for Ruby and C# test unit frameworks.
+
+Its useful to explore the ruby debugger using ruby -r debug file.rb and the profiler using ruby -r profiler file.rb
+
+Page 234 for ruby interpreter command line options.
