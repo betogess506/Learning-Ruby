@@ -57,3 +57,5 @@ Fibers are really good for throttling and iterating over infinite sequences. Thr
 Mutex is amazing for thread scheduling. Using mutex.synchronize preferably over lock and unlock.
 
 Need to explore why things like Threads.each(&:join) work the way they do. Also need to delve into the IO class a bit more, and experiment with subprocesses and forks.
+
+Check out NUnit and JUnit for Ruby and C# test unit frameworks.
