@@ -6,6 +6,7 @@ threads = Array.new
 pages.each do |page|
   threads << Thread.new(page) do |url|
     href = Net::HTTP.new(url, 80)
+    puts "Fetching #{url}..."
     response = href.get('/')
     puts "Got #{url}: #{response.message}"
   end
