@@ -1,0 +1,24 @@
+require 'rubygems/package_task'
+spec =  Gem::Specification.new do |s|
+  s.name = "anagram"
+  s.summary = "Find anagrams of words"
+  s.description = File.read(File.join(File.dirname(__FILE__), 'README'))
+  s.requirements = ['dictionary file']
+  s.version = "0.0.1"
+  s.author = "Richard"
+  s.email = "r.crawfordwilson@gmail.com"
+  s.homepage = "http://www.github.com/Senjai"
+  s.platform = Gem::Platform::RUBY
+  s.required_ruby_version = '>=1.9'
+  s.files = Dir["**/**"]
+  s.executables = ['anagram.rb']
+  s.test_files = Dir["test/test*.rb"]
+  s.has_rdoc = false
+end
+Gem::PackageTask.new(spec).define
+
+desc "Run them tests"
+task :run_tests do
+  load 'test/test_finder.rb'
+  load 'test/test_options.rb'
+end
