@@ -1,0 +1,17 @@
+require 'rubygems/package_task'
+spec =  Gem::Specification.new do |s|
+  s.name = "qbench"
+  s.summary = "Benchmark a code snippet"
+  s.description = File.read(File.join(File.dirname(__FILE__), 'README.md'))
+  s.requirements = ['Ruby standard library']
+  s.version = "0.1.0"
+  s.author = "Richard"
+  s.email = "r.crawfordwilson@gmail.com"
+  s.homepage = "http://www.github.com/Senjai"
+  s.platform = Gem::Platform::RUBY
+  s.required_ruby_version = '>=1.9'
+  s.files = Dir["**/**"]
+  s.executables = ['qbench']
+  s.has_rdoc = false
+end
+Gem::PackageTask.new(spec).define
