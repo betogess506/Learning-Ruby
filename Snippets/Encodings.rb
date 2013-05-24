@@ -5,7 +5,7 @@ Encoding.aliases.each do |alias_name, base_name|
   encodings[base_name] << alias_name
 end
 
-names = encodings
+namess = encodings
         .values
         .sort_by {|base_name, *| base_name.downcase}
         .map do |base_name, *rest|
@@ -16,4 +16,4 @@ names = encodings
           end
         end
 
-puts names
+puts namess
