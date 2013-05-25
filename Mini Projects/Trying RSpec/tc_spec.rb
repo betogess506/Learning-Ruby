@@ -1,3 +1,4 @@
+#!usr/bin/ruby
 #First RSpec file.
 require_relative 'tennis_scorer'
 
