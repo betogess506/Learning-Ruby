@@ -1,0 +1,19 @@
+require 'fileutils'
+
+desc "Copy directory contents to /usr/lib/cgi-bin"
+task :move do
+  files = Dir["cgi_*.rb"]
+  FileUtils.cp(files, '/usr/lib/cgi-bin')
+end
+
+desc "CHMOD all .rb files in /usr/lib/cgi-bin"
+task :chmod do
+  files = Dir["/usr/lib/cgi-bin/*.rb"]
+  FileUtils.chmod('a=rx,u=rwx', files)
+end
+
+desc "Delete all .rb files in /usr/lib/cgi-bin"
+task :purge do
+  files = Dir["/usr/lib/cgi-bin/*.rb"]
+  FileUtils.rm files
+end
