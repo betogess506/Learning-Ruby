@@ -1,3 +1,4 @@
+#!usr/bin/ruby
 #Simple benchmark wrapper to test the perfomance of a file without having to add the benchmark class to it.
 require 'benchmark'
 if ARGV.empty?
