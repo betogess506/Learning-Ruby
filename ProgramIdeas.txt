@@ -2,8 +2,6 @@ IRC Bot.
 Thoughtful
 Battleship
 Snake
-FindAnything
-WinTools?
 Process Monitor?
 Calendar widget for rails.
 
@@ -11,5 +9,4 @@ Calendar widget for rails.
 
 Libraries to learn:
 
-OptionParser
 LibXML/Nokogiri.
