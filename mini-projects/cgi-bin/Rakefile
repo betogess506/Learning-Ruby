@@ -4,20 +4,20 @@ require 'fileutils'
 #Only affects files with the naming convention cgi_*.rb
 desc "Copy directory contents to /usr/lib/cgi-bin"
 task :move do
-  files = Dir["cgi_*.rb"]
+  files = Dir["cgi_*rb"]
   FileUtils.cp(files, '/usr/lib/cgi-bin')
 end
 
 #We want files to be executable and readable by all, but we only want the current user to be able to write to them.
 desc "CHMOD all .rb files in /usr/lib/cgi-bin"
 task :chmod do
-  files = Dir["/usr/lib/cgi-bin/*.rb"]
+  files = Dir["/usr/lib/cgi-bin/*rb"]
   FileUtils.chmod('a=rx,u=rwx', files)
 end
 
 desc "Delete all .rb files in /usr/lib/cgi-bin"
 task :purge do
-  files = Dir["/usr/lib/cgi-bin/*.rb"]
+  files = Dir["/usr/lib/cgi-bin/*rb"]
   FileUtils.rm files
 end
 
