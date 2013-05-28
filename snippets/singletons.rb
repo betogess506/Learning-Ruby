@@ -2,7 +2,7 @@
 
 class Test
   @var = 99
-  attr_accessor :vars
+  attr_accessor :var
 
   def initialize
     @var = "Whoop"
@@ -22,3 +22,4 @@ puts Test.var
 Test.var = 5
 puts Test.var
 puts t.pri
+puts t.var

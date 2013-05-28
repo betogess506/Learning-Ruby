@@ -17,7 +17,7 @@ end
 
 desc "Delete all .rb files in /usr/lib/cgi-bin"
 task :purge do
-  files = Dir["/usr/lib/cgi-bin/*rb"]
+  files = Dir["/usr/lib/cgi-bin/* rb"]
   FileUtils.rm files
 end
 
