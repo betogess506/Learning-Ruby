@@ -4,12 +4,12 @@ module Trace
     culprit.instance_methods(false).each do |func|
       inject(culprit, func)
     end
-  
+
     #Override the singletons method_added to ensure all future methods are injected.
     def culprit.method_added(meth)
       unless @trace_calls_internal
         @trace_calls_internal = true
-        Trace.inject(self, meth)
+        Trace.inject(self, meth) #This will call method_added itself, the condition prevents infinite recursion.
         @trace_calls_internal = false
       end
     end
@@ -22,6 +22,7 @@ module Trace
       #Rewrite dat sheet
       define_method(meth) do |*args, &block|
         puts "==> Called #{meth} with #{args.inspect}"
+        #the bind to self will put the context back to the class.
         result = method_object.bind(self).call(*args, &block)
         puts "<== #{meth} returned #{result.inspect}"
         result
