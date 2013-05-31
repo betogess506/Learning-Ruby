@@ -15,7 +15,7 @@ class Chord
 end
 
 chords = %w{ G Bb Dd E }
-c = Chord.new(chords.map {|n| Note.new n})
+c = Chord.new(chords.map(&Note.method(:new)))
 puts c.play
 
 puts "Dumping!"
