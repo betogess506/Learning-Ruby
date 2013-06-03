@@ -11,7 +11,7 @@ module Trace
         @trace_calls_internal = true
         Trace.inject(self, meth) #This will call method_added itself, the condition prevents infinite recursion.
         @trace_calls_internal = false
-      end
+      end 
     end
   end
 
@@ -29,7 +29,7 @@ module Trace
       end
     end
   end
-end
+en
 
 class Example
   def one(arg)

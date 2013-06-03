@@ -44,7 +44,7 @@ class PhoneBook
   def display
     csv = _open('r', headers: true)
     csv.each do |row|
-      puts "Name: #{row['Name']} Sex: #{row['Sex']} Age: #{row['Age']}" 
+      puts "Name: #{row['Name']} Sex: #{row['Sex']} Age: #{row['Age']}"
     end
     csv.close
   end
@@ -81,7 +81,7 @@ class PhoneBook
     end
   end
 
-  #The beauty of the CSV library is here, you can lookup any value in any column. 
+  #The beauty of the CSV library is here, you can lookup any value in any column.
   def lookup(col, val)
     puts "DEBUG MSG: Looking up #{val}.." if $DEBUG
     results = Array.new
@@ -92,7 +92,7 @@ class PhoneBook
         results << row.fields
       end
     end
-    f.close 
+    f.close
     results
   end
 
@@ -128,7 +128,7 @@ pb.add_entry("Midori", "Female", "22")
 pb.add_entry("Mike", "Male", "34")
 pb.add_entry("Lonnie","Female", "23")
 #Print out what we have so far.
-pb.display 
+pb.display
 #We don't like Mike, so lets get rid of him
 pb.delete_entry("Mike")
 #Make sure he's deleted..
