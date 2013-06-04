@@ -1,4 +1,3 @@
-#!/usr/bin/ruby
 # encoding: utf-8
 # Standard dataset for testing...
 Product.delete_all
