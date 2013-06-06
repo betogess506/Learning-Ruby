@@ -8,8 +8,8 @@
 <div class="entry">
   <%= image_tag product.image_url %>
   <h3><%= product.title %></h3>
-  <%= sanitize product.description %>
-  <div class="price_line">
+  <div class="desc"><%= sanitize product.description %></div>
+  <div class="desc"> <!--Seperate blocks on purpose.. -->
     <span class="price"><%= product.price %></span>
   </div>
 </div>
