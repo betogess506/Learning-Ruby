@@ -19,6 +19,7 @@
         <li><a href="http://www.../news">News</a></li>
         <li><a href="http://www.../contact">Contact</a></li>
       </ul>
+      <p>Time: <%= Time.now.strftime("%I:%M%p (GMT -8)") %></p>
     </div>
     <div id="main">
       <%= yield %>
