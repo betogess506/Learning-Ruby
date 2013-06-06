@@ -32,6 +32,10 @@
 
     .desc {
       margin: 0.5em 0px 0.8em 100px;
+
+      form, div {
+        display:inline;
+      }
     }
 
     .price {
