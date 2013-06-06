@@ -57,7 +57,9 @@
     }
 
     ul {
-      padding: 0
+      padding: 0;
+      text-align: left;
+      list-style-type: none;
       a {
         color: #bfb;
         font-size: small;
