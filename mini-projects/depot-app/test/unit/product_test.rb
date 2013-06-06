@@ -73,6 +73,6 @@ class ProductTest < ActiveSupport::TestCase
     assert_equal product.errors[:title].join('; '), "is too short (minimum is 10 characters)"
 
     product.title = "A title that is long enough.."
-    assert product.valid?
+    assert product.valid?, "Product should be valid..."
   end
 end
