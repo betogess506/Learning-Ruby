@@ -11,3 +11,13 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+ruby:
+  title: Programming Ruby 1.9
+  description:
+    Ruby is the fastest growing and most exciting language that
+    is currently out there. Using it with rails is a great idea
+    as well as other frameworks such as chef etc....
+  price: 49.50
+  image_url: ruby.png
+
