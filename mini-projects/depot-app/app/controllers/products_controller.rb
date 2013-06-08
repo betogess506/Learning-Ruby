@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+    @cart = current_cart
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,6 +15,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.find(params[:id])
+    @cart = current_cart
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,7 +27,7 @@ class ProductsController < ApplicationController
   # GET /products/new.json
   def new
     @product = Product.new
-
+    @cart = current_cart
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @product }
@@ -35,6 +37,7 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @product = Product.find(params[:id])
+    @cart = current_cart
   end
 
   # POST /products
@@ -57,6 +60,7 @@ class ProductsController < ApplicationController
   # PUT /products/1.json
   def update
     @product = Product.find(params[:id])
+    @cart = current_cart
 
     respond_to do |format|
       if @product.update_attributes(params[:product])
