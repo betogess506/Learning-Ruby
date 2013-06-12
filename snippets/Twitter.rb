@@ -41,7 +41,7 @@ class Tweet
     print "tweet: "
     tweet = gets.chomp
 
-    @tweets << {name: name, tweet: tweet}
+    @tweets << {:name => name, :tweet => tweet}
     puts "Added!"
     menu
   end
